@@ -1,0 +1,26 @@
+.test {
+    font-family: monospace;
+    border: 1px solid #000;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.test.ok {
+    background: #5cb85c;
+}
+
+.test.ok:before {
+    font-weight: bold;
+    content: "PASSED - ";
+}
+
+.test.fail {
+    background: #d9534f;
+}
+
+.test.fail:before {
+    font-weight: bold;
+    content: "FAILED - ";
+}
